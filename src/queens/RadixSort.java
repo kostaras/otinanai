@@ -2,7 +2,7 @@ package queens;
 // stelios ....
 public class RadixSort {
 
-    private static void sort(int a[]){
+    public static void sort(int a[]){
         //find max element
         int max = 0;
         
