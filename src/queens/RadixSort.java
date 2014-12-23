@@ -48,7 +48,7 @@ public class RadixSort {
         display(a);
     }
 
-    public void input()throws Exception{
+    public void input(){
 
         int n = 13;
         int array[] = new int[n];
