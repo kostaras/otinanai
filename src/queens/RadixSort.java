@@ -1,8 +1,8 @@
 package queens;
-
+// stelios ....
 public class RadixSort {
 
-    private void sort(int a[]){
+    private static void sort(int a[]){
         //find max element
         int max = 0;
         
@@ -44,15 +44,10 @@ public class RadixSort {
                     if(lists[k][j] != 0)
                         a[c++]=lists[k][j];
         }
-        System.out.println("\nDisplay array after sorting: ");
-        display(a);
     }
 
-    public void input(){
+    public static void input(int[] array){
 
-        int n = 13;
-        int array[] = new int[n];
-        
         array[0]  = 4252;
         array[1]  = 3;
         array[2]  = 543;
@@ -66,20 +61,27 @@ public class RadixSort {
         array[10] = 42;
         array[11] = 41;
         array[12] = 53;
-
-        System.out.println("\nDisplay array before sorting: ");
-        display(array);
-        sort(array);
      }
 
 
-    public void display(int a[]){
+    public static void display(int a[]){
         for (int i = 0; i < a.length; i++)
             System.out.print(a[i] + "  ");
         System.out.println("");
     }
 
     public static void main(String[] args){
-        new RadixSort().input();
+        int n = 13;
+        int array[] = new int[n];
+        input(array);
+        
+        System.out.println("\nDisplay array before sorting: ");
+        display(array);
+        
+        sort(array);
+        
+        System.out.println("\nDisplay array after sorting: ");
+        display(array);
+        
     }
 }
