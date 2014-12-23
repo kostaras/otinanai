@@ -21,7 +21,7 @@ public class RadixSort {
         
         
         int buckets = 10;
-        int lists[][]=new int[a.length][10];
+        int lists[][]=new int[a.length][buckets];
         
 
         for(int i = 0; i < digitsMax; i++){
