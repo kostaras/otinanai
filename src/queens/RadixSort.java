@@ -4,19 +4,19 @@ public class RadixSort {
 
     private void sort(int a[]){
         //find max element
-        int max=0;
+        int max = 0;
         
-        for (int i = 0; i<a.length; i++) {
+        for (int i = 0; i < a.length; i++) {
 
-            if(a[i]>max)
-                max=a[i];
+            if(a[i] > max)
+                max = a[i];
         }
         
         //calculate digits of max number
-        int digitsMax=0;
-        while (max!=0) {
+        int digitsMax = 0;
+        while (max != 0) {
             digitsMax++;
-            max/=10;
+            max /= 10;
         }
         
         
@@ -75,11 +75,11 @@ public class RadixSort {
 
     public void display(int a[]){
         for (int i = 0; i < a.length; i++)
-            System.out.print(a[i]+"  ");
+            System.out.print(a[i] + "  ");
         System.out.println("");
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args){
         new RadixSort().input();
     }
 }
